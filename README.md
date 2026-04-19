@@ -16,16 +16,31 @@ and developer platforms. One MCP connection, one API key, every source.
 
 ## Connect Claude in 30 seconds
 
-### Claude Desktop (Connector form, easiest)
+You can connect Trends MCP in three ways. The Connector option works on
+Claude.ai (web), Claude Desktop, and Claude mobile, on Pro, Max, Team,
+and Enterprise plans.
 
-In Claude Desktop, open the Connectors panel and add:
+### Option 1: Add as a Claude Connector (easiest)
 
-- **Name:** `Trends MCP`
-- **Server URL:** `https://www.trendsmcp.ai/mcp`
+The fastest path is the one-click button on the website:
 
-Then sign in with your TrendsMCP account when prompted.
+1. Go to [trendsmcp.ai](https://trendsmcp.ai) and click **Add to Claude**.
+2. Claude opens the Connectors panel with the fields pre-filled.
+3. Sign in with your TrendsMCP account when prompted.
 
-### Claude Desktop (manual config)
+To add it manually inside Claude:
+
+1. Open Claude (web at [claude.ai](https://claude.ai), Desktop, or mobile).
+2. Go to `Settings` → `Connectors` → `Add custom connector`.
+3. Paste:
+   - **Name:** `Trends MCP`
+   - **Server URL:** `https://www.trendsmcp.ai/mcp`
+4. Sign in with your TrendsMCP account.
+
+The connector then shows up in every new Claude conversation and you can
+toggle it on per chat.
+
+### Option 2: Claude Desktop (manual config file)
 
 `User` → `Settings` → `Developer` → `Edit Config`. Add inside `mcpServers`:
 
@@ -52,7 +67,7 @@ Config file location:
 
 Fully quit and restart Claude Desktop after saving.
 
-### Claude Code (CLI)
+### Option 3: Claude Code (CLI)
 
 ```bash
 claude mcp add --transport http trends-mcp https://api.trendsmcp.ai/mcp \
