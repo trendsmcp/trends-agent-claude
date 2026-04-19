@@ -22,20 +22,15 @@ and Enterprise plans.
 
 ### Option 1: Add as a Claude Connector (easiest)
 
-The fastest path is the one-click button on the website:
+Inside Claude, on web ([claude.ai](https://claude.ai)), Desktop, or mobile:
 
-1. Go to [trendsmcp.ai](https://trendsmcp.ai) and click **Add to Claude**.
-2. Claude opens the Connectors panel with the fields pre-filled.
-3. Sign in with your TrendsMCP account when prompted.
-
-To add it manually inside Claude:
-
-1. Open Claude (web at [claude.ai](https://claude.ai), Desktop, or mobile).
-2. Go to `Settings` → `Connectors` → `Add custom connector`.
-3. Paste:
+1. Open `Settings` → `Connectors` → `Add custom connector`.
+2. Enter these two values (copy them from
+   [trendsmcp.ai](https://trendsmcp.ai), there is also an
+   **Add to Claude** button there that opens the connector form for you):
    - **Name:** `Trends MCP`
    - **Server URL:** `https://www.trendsmcp.ai/mcp`
-4. Sign in with your TrendsMCP account.
+3. Save, then sign in with your TrendsMCP account when Claude prompts you.
 
 The connector then shows up in every new Claude conversation and you can
 toggle it on per chat.
